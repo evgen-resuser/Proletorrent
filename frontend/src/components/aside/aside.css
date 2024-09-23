@@ -1,0 +1,115 @@
+aside {
+    grid-area: aside;
+    background: linear-gradient(180deg, #cf0000 9.57%, #960000 100%) fixed;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.add-button-float {
+    display: none;
+}
+
+.add-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto 1em;
+    border-radius: 15px;
+    border: #db0000 solid 2px;
+    padding: 0 2em 0;
+}
+
+.add-button > span {
+    font-size: 1.3em;
+    color: #db0000;
+    font-weight: bold;
+}
+
+.add-button > img {
+    filter: invert(9%) sepia(100%) saturate(6831%) hue-rotate(8deg) brightness(93%) contrast(113%);
+}
+
+.add-button:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
+
+aside > div {
+    flex-basis: 30vh;
+}
+
+aside > div > ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 1vw;
+    padding-top: 1em;
+
+    position: absolute;
+}
+
+.big-logo {
+}
+
+.big-logo > img {
+    aspect-ratio: 1/1;
+    position: absolute;
+    margin-left: 2em;
+    height: 45vh;
+    filter: invert(11%) sepia(96%) saturate(3863%) hue-rotate(357deg) brightness(80%) contrast(116%);
+}
+
+@media (max-width: 750px) {
+    aside {
+        display: flex;
+        height: 2em;
+        flex-direction: row;
+        flex-basis: auto;
+    }
+
+    aside > div > ul {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0;
+        width: 95%;
+    }
+
+    aside > div {
+        flex-basis: auto;
+    }
+
+    .big-logo {
+        display: none;
+    }
+
+    .big-logo > img {
+        display: none;
+    }
+
+    .add-button {
+        display: none;
+    }
+
+    .add-button-float {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 600;
+        bottom: 1.5em;
+        right: 1.5em;
+        aspect-ratio: 1/1;
+        width: 4em;
+
+        background-color: #db0000;
+        border-radius: 15px;
+        border: none;
+
+        box-shadow: rgba(0, 0, 0, 0.38) 5px 5px 10px;
+    }
+
+    .add-button-float > img {
+        filter: invert(84%) sepia(40%) saturate(2347%) hue-rotate(358deg) brightness(103%) contrast(103%);
+    }
+
+}
+

@@ -1,0 +1,10 @@
+.file-preview-box {
+    height: 70%;
+    border-radius: 15px;
+    background-color: #f3f3f3;
+    border: rgb(203, 203, 203) 2px solid;
+    margin: 0 1em 1em;
+    overflow: auto;
+
+    flex-basis: 80%;
+}

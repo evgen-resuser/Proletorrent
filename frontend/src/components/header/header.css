@@ -1,0 +1,47 @@
+header {
+    grid-area: header;
+
+    height: 13vh;
+    width: 100%;
+    background: linear-gradient(180deg, #8F0000 0%, #d00000 100%);
+
+    display: flex;
+}
+
+.git-btn-container {
+    margin-right: 1em;
+}
+
+.header-settings-button {
+    aspect-ratio: 1/1;
+    width: 4em;
+    background: none;
+    border-radius: 10px;
+    border: none;
+
+    transition: all 300ms ease;
+}
+
+.header-settings-button > img {
+    aspect-ratio: 1/1;
+    width: 3em;
+    filter: invert(0.84) sepia(0.4) saturate(23.47) hue-rotate(358deg) brightness(1.03) contrast(1.03);
+}
+
+.header-settings-button:hover {
+    background: rgba(255, 214, 0, 0.2);
+    scale: 1.05;
+
+    transition: all 300ms ease;
+}
+
+.header-settings-button {
+    margin-right: 1em;
+    margin-left: auto;
+}
+
+@media (max-width: 750px) {
+    header {
+        height: 10vh;
+    };
+}
